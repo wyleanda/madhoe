@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import random
+import secret 
 
 
 class MyClient(discord.Client):
@@ -52,4 +53,4 @@ intents.members = True
 
 client = MyClient(intents=intents)
 
-client.run('ODE0MjE1NjYzODk1ODM4NzMx.YDanbQ.QLwbmkj7nKN1wEUIG__56__bk04')
+client.run(secret.token)
